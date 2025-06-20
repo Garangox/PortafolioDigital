@@ -199,3 +199,14 @@ nav button:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
+.avatar-iframe {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.avatar-iframe iframe {
+  border: 2px solid #6a11cb;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(106, 17, 203, 0.3);
+}
