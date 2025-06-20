@@ -200,12 +200,14 @@ nav button:hover {
 }
 
 .avatar-iframe {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;  /* 🔹 Antes 300px, ahora un poco más ancho */
+  margin: 0 auto;    /* Centrado */
 }
 
 .avatar-iframe iframe {
+  width: 100%;
+  aspect-ratio: 4 / 5;  /* 🔹 Relación un poco más ancha que 3/4 */
   border: 2px solid #6a11cb;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(106, 17, 203, 0.3);
