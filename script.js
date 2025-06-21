@@ -7,8 +7,6 @@ function toggleSeccion(id, idP) {
       x[i].style.display = 'none';
     }
   }
-
-
   if (!section) return;
 
   if (section.style.display === "none" || section.style.display === "") {
@@ -56,4 +54,3 @@ function pausarCarrusel() {
 function reanudarCarrusel() {
   iniciarCarrusel();
 }
-
