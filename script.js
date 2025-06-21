@@ -33,24 +33,19 @@ function toggleSeccion(id, idP) {
 }
 
 
-let carruselInterval;
 let index = 0;
-const totalSlides = 3;
+const totalSlides = document.querySelectorAll('#slides img').length;
 
 function cambiarSlide() {
   index = (index + 1) % totalSlides;
-  document.getElementById("slides").style.transform = `translateX(-${index * 100
-    }%)`;
+  document.getElementById("slides").style.transform = `translateX(-${index * 100}%)`;
 }
 
 function iniciarCarrusel() {
-  carruselInterval = setInterval(cambiarSlide, 3000);
+  setInterval(cambiarSlide, 3000);
 }
 
-function pausarCarrusel() {
-  clearInterval(carruselInterval);
-}
+window.onload = iniciarCarrusel;
 
-function reanudarCarrusel() {
-  iniciarCarrusel();
-}
+
+
