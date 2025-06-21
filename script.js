@@ -1,7 +1,7 @@
-function toggleSeccion(id) {
+function toggleSeccion(id, idP) {
   const section = document.getElementById(id);
 
-  if (section.style.display != "block") {
+  if (section.style.display != "block" && id != "presentacion") {
     const x = document.getElementsByClassName("contenido");
     for (let i = 0; i < x.length; i++) {
       x[i].style.display = 'none';
@@ -14,13 +14,15 @@ function toggleSeccion(id) {
   if (section.style.display === "none" || section.style.display === "") {
     section.style.display = "block";
     section.style.maxHeight = "none";
-    const fullHeight = section.scrollHeight + "px";
+    const parent = (idP ?  document.getElementById(idP) : '');
+    const fullHeight = (section.scrollHeight + (parent ? parent.scrollHeight : '')) + "px";
     section.style.maxHeight = "0";
     section.style.overflow = "hidden";
 
     setTimeout(() => {
       section.style.transition = "max-height 0.5s ease-in-out";
       section.style.maxHeight = fullHeight;
+      if(parent) parent.style.maxHeight = fullHeight;
     }, 10);
   } else {
     section.style.transition = "max-height 0.5s ease-in-out";
