@@ -57,7 +57,6 @@ function toggleSub(id) {
   } else {
     sub.style.display = "block";
 
-    // ⏫ Recalcula el alto del contenedor principal si se expande contenido
     if (parent && parent.style.maxHeight) {
       setTimeout(() => {
         parent.style.maxHeight = parent.scrollHeight + "px";
