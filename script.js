@@ -48,4 +48,21 @@ function iniciarCarrusel() {
 window.onload = iniciarCarrusel;
 
 
+function toggleSub(id) {
+  const sub = document.getElementById(id);
+  const parent = sub.closest('.contenido');
+
+  if (sub.style.display === "block") {
+    sub.style.display = "none";
+  } else {
+    sub.style.display = "block";
+
+    // ⏫ Recalcula el alto del contenedor principal si se expande contenido
+    if (parent && parent.style.maxHeight) {
+      setTimeout(() => {
+        parent.style.maxHeight = parent.scrollHeight + "px";
+      }, 10);
+    }
+  }
+}
 
