@@ -204,13 +204,13 @@ nav button:hover {
 
 .avatar-iframe {
   width: 100%;
-  max-width: 600px;  
-  margin: 0 auto;   
+  max-width: 600px;  /* 🔹 */
+  margin: 0 auto;    /*  */
 }
 
 .avatar-iframe iframe {
   width: 100%;
-  aspect-ratio: 4 / 5; 
+  aspect-ratio: 4 / 5;  /* 🔹  */
   border: 2px solid #6a11cb;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(106, 17, 203, 0.3);
@@ -248,3 +248,18 @@ nav button:last-child {
   transform: translateY(-2px); 
 }
 
+.descargar-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6a11cb;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.descargar-btn:hover {
+  background-color: #5111a7;
+}
