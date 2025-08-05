@@ -181,10 +181,19 @@
     <p>Aquí puedes mostrar una imagen o enlace a la infografía.</p>
   </div>
 
-  <button class="sub-boton" onclick="toggleSub('propuesta')">Propuesta metodológica</button>
-  <div id="propuesta" class="sub-contenido" style="display: none;">
-    <p>Contenido o explicación de la propuesta metodológica.</p>
-  </div>
+<button class="sub-boton" onclick="toggleSub('propuesta')">Propuesta metodológica</button>
+<div id="propuesta" class="sub-contenido" style="display: none; text-align: center;">
+  <p>Aquí puedes visualizar o descargar la propuesta metodológica:</p>
+
+  <iframe src="docs/tarea diseño instrucccional.pdf" width="100%" height="500px"
+    style="border: none; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); max-width: 900px;">
+  </iframe>
+
+  <br><br>
+  <a href="docs/tarea diseño instrucccional.pdf" target="_blank" download class="descargar-btn">
+    Descargar Propuesta
+  </a>
+</div>
 
   <button class="sub-boton" onclick="toggleSub('instruccional')">Diseño instruccional</button>
   <div id="instruccional" class="sub-contenido" style="display: none;">
