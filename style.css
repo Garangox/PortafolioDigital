@@ -312,14 +312,19 @@ nav button:last-child {
 }
 
 .agradecimiento-item {
-  background: #f8f8ff;
+  background: #f4f0fa; 
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .agradecimiento-item h5 {
   margin-top: 0;
   color: #6a11cb;
   font-size: 1.1rem;
+}
+
+.agradecimiento-item p {
+  color: #222; 
 }
