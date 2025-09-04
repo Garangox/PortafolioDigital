@@ -310,3 +310,16 @@ nav button:last-child {
 .descargar-btn:hover {
   background-color: #5111a7;
 }
+
+.agradecimiento-item {
+  background: #f8f8ff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.agradecimiento-item h5 {
+  margin-top: 0;
+  color: #6a11cb;
+  font-size: 1.1rem;
+}
