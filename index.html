@@ -233,11 +233,15 @@
   </a>
 </div>
 
-  <button class="sub-boton" onclick="toggleSub('video')">Video tutorial</button>
-  <div id="video" class="sub-contenido" style="display: none;">
-    <p>Aquí puedes insertar el video tutorial con iframe de YouTube o video local.</p>
-  </div>
-</section>
+  <button class="sub-boton" onclick="toggleSub('videotutorial')">Video tutorial</button>
+<div id="videotutorial" class="sub-contenido" style="display: none; text-align: center;">
+  <p>Aquí puedes ver el video tutorial:</p>
+
+  <video controls width="100%" style="max-width: 900px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+    <source src="videos/socializacion-portafolio.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+  </video>
+</div>
 
       <section id="creditos" class="contenido" style="display: none;">
   <h3>Créditos</h3>
